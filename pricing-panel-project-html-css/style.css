@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(194, 198, 207);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.pricing-panel{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding:15px 25px;
+    width: 100%;
+    max-width: 950px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.278);
+}
+
+.pricing-choice{
+    padding:20px;
+    border-bottom: 2px solid rgb(255, 231, 189);
+}
+
+.pricing-choice:last-child{
+    padding:20px;
+    border-bottom: none;
+}
+
+.pricing-img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.pricing-header{
+    color:rgb(129, 129, 129);
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.pricing-features{
+    margin: 40px 0 20px;
+    color:rgb(77, 80, 0);
+}
+.pricing-item{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size:14px;
+    line-height: 2;
+    padding:10px 0;
+    border-top: 1px solid rgb(255, 233, 187);
+}
+
+.pricing-item:last-child{
+    border-bottom: 1px solid rgb(255, 231, 187);
+}
+
+.pricing-cost{
+    color:rgb(220, 132, 10);
+    font-weight: 700;
+    font-size:24px;
+    display: block;
+}
+
+.pricing-button{
+    font-size:25px;
+    font-weight: 700px;
+    border-radius:10px;
+    padding:15px 35px;
+    display:inline-block;
+    margin:20px 0;
+    color:rgb(174, 130, 73);
+    border: 1px solid rgb(255, 210, 161);
+    text-decoration: none;
+    transition: background-color 200mx ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus{
+    background-color: rgb(255, 238, 175);
+    border-radius:10px;
+}
+
+.pricing-button.featured{
+    background-color: rgb(255, 183, 67);
+    color:white;
+}
+
+.pricing-button.featured:hover, .pricing-button.featured:focus{
+    background-color: rgb(247, 194, 36);
+}
+
+.featured-tag{
+    color:rgb(255, 191, 52);
+    font-size:12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display:block;
+}
+
+@media (min-width: 700px){
+    .pricing-panel{
+        flex-direction: row;
+    }
+
+    .pricing-choice{
+        border-bottom: none;
+        border-right: 1px solid rgb(241, 228, 208);
+    }
+    .pricing-choice:last-child{
+        border-right: none;
+    }
+}

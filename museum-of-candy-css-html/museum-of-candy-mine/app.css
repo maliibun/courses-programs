@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(249, 210, 200);
+    height: 100vh;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position:fixed; 
+    top:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    padding: 10px 0;
+    transition: 350ms background-color ease-in-out;
+}
+
+.navbar-scrolled{
+    background-color:rgb(241, 173, 203);
+}
+
+.nav-elements{
+    display:flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    margin: 0px 20px;
+}
+
+.nav-link{
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.title{
+    color:red;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    margin:40px 0;
+}
+
+.content .panel:first-child{
+    margin: 0;
+}
+
+.first-panel{
+    color:white;
+    text-align:center;
+    font-size:60px;
+    line-height: 80px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.title-slash{
+    color:red;
+}
+
+.image{
+    width: 50%;
+}
+
+.content-panel{
+    width:50%;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-header{
+    color:red;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.content-text{
+    text-align: center;
+    width: 80%;
+    color:rgb(58, 58, 58);
+    line-height: 35px;
+    font-size:18px;
+}
